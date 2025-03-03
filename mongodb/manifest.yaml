@@ -8,7 +8,7 @@ metadata:
     tier: db
     project: roboshop
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels: # these labels should match with pod
       app: mongodb
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: joindevops/mongodb:1.0.0
+        image: guvvalakumaraswamy/mongodb:1.0.0
 ---
 apiVersion: v1
 kind: Service
