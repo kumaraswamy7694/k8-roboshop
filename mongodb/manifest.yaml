@@ -8,7 +8,7 @@ metadata:
     tier: db
     project: roboshop
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels: # these labels should match with pod
       app: mongodb
